@@ -18,7 +18,7 @@ const long = String.fromCharCode(8206)
 const readmore = long.repeat(4001)
 const Secktor = require('../lib/commands')
     //---------------------------------------------------------------------------
-Secktor.cmd({
+cmd({
             pattern: "help",
             alias: ["menu"],
             desc: "Help list",
@@ -107,7 +107,7 @@ Secktor.cmd({
         }
     )
     //---------------------------------------------------------------------------
-Secktor.cmd({
+cmd({
             pattern: "list",
             desc: "list menu",
             category: "general",
@@ -141,7 +141,7 @@ Secktor.cmd({
         }
     )
     //---------------------------------------------------------------------------
-Secktor.cmd({
+cmd({
         pattern: "owner",
         desc: "To check ping",
         category: "general",
@@ -178,7 +178,7 @@ Secktor.cmd({
     }
 )
 
-Secktor.cmd({
+cmd({
     pattern: "file",
     desc: "to get extact name where that command is in repo.\nSo any user can edit that.",
     category: "general",
